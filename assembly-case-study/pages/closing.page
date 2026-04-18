@@ -1,0 +1,174 @@
+pageType: final
+background:
+  type: solid
+  color: "$primaryDark"
+elements:
+  # Center content
+  - elementId: headline
+    elementType: text
+    bounds: [190, 160, 900, 140]
+    content:
+      fontSize: 52
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.05
+      align: [center, top]
+      text: |
+        <p>The Brand Gap<br><em style="color:#F3EDE540;">is the Opportunity</em></p>
+
+  - elementId: sub-text
+    elementType: text
+    bounds: [340, 320, 600, 120]
+    content:
+      fontSize: 18
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF50"
+      lineHeight: 1.7
+      align: [center, top]
+      text: |
+        <p>Assembly had the product, the economics, and the right segment. What it lacked was a brand story powerful enough to make its product mean something beyond function.</p>
+
+  # Tags row
+  - elementId: t1-bg
+    elementType: shape
+    bounds: [230, 460, 180, 36]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#0a2921"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B30"
+
+  - elementId: t1
+    elementType: text
+    bounds: [230, 460, 180, 36]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1.5
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>HENRY SEGMENT</p>"
+
+  - elementId: t2-bg
+    elementType: shape
+    bounds: [420, 460, 140, 36]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#0a2921"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B30"
+
+  - elementId: t2
+    elementType: text
+    bounds: [420, 460, 140, 36]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1.5
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>₹4K–6K PRICE</p>"
+
+  - elementId: t3-bg
+    elementType: shape
+    bounds: [570, 460, 200, 36]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#0a2921"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B30"
+
+  - elementId: t3
+    elementType: text
+    bounds: [570, 460, 200, 36]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1.5
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>INDIAN SUPPLY CHAIN</p>"
+
+  - elementId: t4-bg
+    elementType: shape
+    bounds: [780, 460, 140, 36]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#0a2921"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B30"
+
+  - elementId: t4
+    elementType: text
+    bounds: [780, 460, 140, 36]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1.5
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>MINIMALISM</p>"
+
+  - elementId: t5-bg
+    elementType: shape
+    bounds: [930, 460, 160, 36]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#0a2921"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B30"
+
+  - elementId: t5
+    elementType: text
+    bounds: [930, 460, 160, 36]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1.5
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>BRAND STORY</p>"
+
+  # Footer
+  - elementId: footer
+    elementType: text
+    bounds: [240, 640, 800, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF20"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Assembly — Shark Tank India Season 3 · Marketing Strategy Analysis · IIM Individual Assignment</p>

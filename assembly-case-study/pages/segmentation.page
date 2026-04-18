@@ -1,0 +1,418 @@
+pageType: content
+background:
+  type: solid
+  color: "$offwhite"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 50, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#0F3D354D"
+      wrap: false
+      text: |
+        <p>04 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 78, 200, 24]
+    content:
+      style: "$eyebrow"
+      color: "$primary"
+      wrap: false
+      text: |
+        <p>INITIAL SEGMENTATION</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 106, 480, 120]
+    content:
+      style: "$sectionHeading"
+      text: |
+        <p>Who Assembly<br><em style="color:#6E8F8B;">Targeted</em></p>
+
+  # Segmentation points
+  - elementId: seg1
+    elementType: shape
+    bounds: [80, 236, 500, 92]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: seg1-letter
+    elementType: text
+    bounds: [92, 248, 52, 48]
+    content:
+      fontSize: 36
+      fontFamily: "SortsMillGoudy"
+      color: "$secondary"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>H</p>
+
+  - elementId: seg1-text
+    elementType: text
+    bounds: [152, 244, 412, 68]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p><strong style="color:#2E2E2E;">High Earning, Not Rich Yet (HENRY)</strong> — Urban professionals aged 28–38, income ₹10–40L, aspirational but price-aware.</p>
+
+  - elementId: seg2
+    elementType: shape
+    bounds: [80, 332, 500, 92]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: seg2-letter
+    elementType: text
+    bounds: [92, 344, 52, 48]
+    content:
+      fontSize: 36
+      fontFamily: "SortsMillGoudy"
+      color: "$secondary"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>E</p>
+
+  - elementId: seg2-text
+    elementType: text
+    bounds: [152, 340, 412, 68]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p><strong style="color:#2E2E2E;">Experience Economy Buyers</strong> — Travel 4–8× per year, research purchases, share on Instagram. Digital-native behaviour.</p>
+
+  - elementId: seg3
+    elementType: shape
+    bounds: [80, 428, 500, 92]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: seg3-letter
+    elementType: text
+    bounds: [92, 440, 52, 48]
+    content:
+      fontSize: 36
+      fontFamily: "SortsMillGoudy"
+      color: "$secondary"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>N</p>
+
+  - elementId: seg3-text
+    elementType: text
+    bounds: [152, 436, 412, 68]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p><strong style="color:#2E2E2E;">New D2C Loyalists</strong> — Chose Assembly over VIP because of design, not just price. Validated: ₹11.5 Cr revenue, 2L+ customers.</p>
+
+  # RIGHT COLUMN — STP Scorecard
+  - elementId: score-bg
+    elementType: shape
+    bounds: [620, 106, 580, 416]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: score-title
+    elementType: text
+    bounds: [644, 122, 200, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondary"
+      letterSpacing: 1.5
+      wrap: false
+      text: |
+        <p>STP SCORECARD</p>
+
+  # Score 1: Segmentation 70%
+  - elementId: sc1-label
+    elementType: text
+    bounds: [644, 162, 120, 24]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      wrap: false
+      text: |
+        <p>Segmentation</p>
+
+  - elementId: sc1-bar-bg
+    elementType: shape
+    bounds: [644, 190, 400, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: sc1-bar
+    elementType: shape
+    bounds: [644, 190, 280, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: sc1-pct
+    elementType: text
+    bounds: [1056, 182, 60, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E80"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>70%</p>
+
+  # Score 2: Targeting 75%
+  - elementId: sc2-label
+    elementType: text
+    bounds: [644, 218, 120, 24]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      wrap: false
+      text: |
+        <p>Targeting</p>
+
+  - elementId: sc2-bar-bg
+    elementType: shape
+    bounds: [644, 246, 400, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: sc2-bar
+    elementType: shape
+    bounds: [644, 246, 300, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: sc2-pct
+    elementType: text
+    bounds: [1056, 238, 60, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E80"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>75%</p>
+
+  # Score 3: Positioning 30%
+  - elementId: sc3-label
+    elementType: text
+    bounds: [644, 274, 120, 24]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      wrap: false
+      text: |
+        <p>Positioning</p>
+
+  - elementId: sc3-bar-bg
+    elementType: shape
+    bounds: [644, 302, 400, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: sc3-bar
+    elementType: shape
+    bounds: [644, 302, 120, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: sc3-pct
+    elementType: text
+    bounds: [1056, 294, 60, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$red"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>30%</p>
+
+  # Score 4: Brand Identity 20%
+  - elementId: sc4-label
+    elementType: text
+    bounds: [644, 330, 140, 24]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      wrap: false
+      text: |
+        <p>Brand Identity</p>
+
+  - elementId: sc4-bar-bg
+    elementType: shape
+    bounds: [644, 358, 400, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: sc4-bar
+    elementType: shape
+    bounds: [644, 358, 80, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: sc4-pct
+    elementType: text
+    bounds: [1056, 350, 60, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$red"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>20%</p>
+
+  # Score 5: Channel Strategy 55%
+  - elementId: sc5-label
+    elementType: text
+    bounds: [644, 386, 140, 24]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      wrap: false
+      text: |
+        <p>Channel Strategy</p>
+
+  - elementId: sc5-bar-bg
+    elementType: shape
+    bounds: [644, 414, 400, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: sc5-bar
+    elementType: shape
+    bounds: [644, 414, 220, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: sc5-pct
+    elementType: text
+    bounds: [1056, 406, 60, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E80"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>55%</p>
+
+  # Key insight box
+  - elementId: insight-bg
+    elementType: shape
+    bounds: [644, 450, 532, 56]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#A56A3A12"
+    border:
+      style: solid
+      width: 1
+      color: "#A56A3A25"
+
+  - elementId: insight-label
+    elementType: text
+    bounds: [660, 456, 100, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "$accent"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>KEY INSIGHT</p>
+
+  - elementId: insight-text
+    elementType: text
+    bounds: [660, 478, 500, 24]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.4
+      text: |
+        <p>HENRY was right. The <em style="color:#A56A3A;">psychographic</em> — aspiration over restraint — was misread.</p>

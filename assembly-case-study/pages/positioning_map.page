@@ -1,0 +1,278 @@
+pageType: content
+background:
+  type: solid
+  color: "$primaryDark"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 30, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      wrap: false
+      text: |
+        <p>06 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 58, 300, 24]
+    content:
+      style: "$eyebrowLight"
+      wrap: false
+      text: |
+        <p>THE POSITIONING MAP</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 86, 700, 60]
+    content:
+      style: "$sectionHeadingLight"
+      fontSize: 40
+      text: |
+        <p>Brand Aspiration <em style="color:#7FA3A0;">vs</em> Price</p>
+
+  # Bubble Chart — Positioning Map
+  - elementId: pos-chart
+    elementType: chart
+    bounds: [80, 152, 780, 520]
+    type: bubble
+    data:
+      - {brand: "VIP/Safari", aspiration: 2, price: 5, size: 20}
+      - {brand: "Nasher Miles", aspiration: 7.5, price: 6.5, size: 18}
+      - {brand: "Assembly", aspiration: 4, price: 5, size: 15}
+      - {brand: "Mokobara", aspiration: 7, price: 11.5, size: 16}
+      - {brand: "Samsonite", aspiration: 8.5, price: 32, size: 22}
+      - {brand: "Assembly (Potential)", aspiration: 7, price: 5.5, size: 13}
+    x: brand
+    y: [price]
+    size: size
+    names: ["Avg Price (₹K)"]
+    colors: ["#6E8F8B80"]
+    legend: false
+    xAxis:
+      min: 0
+      max: 10
+      title:
+        text: "Brand Aspiration Index →"
+        color: "#5A5652"
+        fontSize: 12
+      label:
+        color: "#5A5652"
+        fontSize: 11
+      gridLine:
+        color: "#FFFFFF0A"
+        style: solid
+      axisLine:
+        color: "#FFFFFF15"
+    yAxis:
+      min: 0
+      max: 35
+      title:
+        text: "Avg Price (₹ thousands)"
+        color: "#5A5652"
+        fontSize: 12
+      label:
+        color: "#5A5652"
+        fontSize: 11
+      gridLine:
+        color: "#FFFFFF0A"
+        style: solid
+      axisLine:
+        color: "#FFFFFF15"
+    seriesStyle:
+      "*":
+        marker:
+          shape: circle
+    fill:
+      type: solid
+      color: "#FFFFFF04"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  # RIGHT SIDE — Legend and Insights
+  # Legend title
+  - elementId: legend-title
+    elementType: text
+    bounds: [900, 152, 300, 24]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1.5
+      wrap: false
+      text: |
+        <p>BRAND LEGEND</p>
+
+  # Legend items
+  - elementId: leg1-dot
+    elementType: shape
+    bounds: [900, 192, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#5A5A5A"
+
+  - elementId: leg1-text
+    elementType: text
+    bounds: [924, 188, 276, 22]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      wrap: false
+      text: |
+        <p><strong style="color:#F3EDE5;">VIP / Safari</strong> — Mass market legacy</p>
+
+  - elementId: leg2-dot
+    elementType: shape
+    bounds: [900, 224, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: leg2-text
+    elementType: text
+    bounds: [924, 220, 276, 22]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      wrap: false
+      text: |
+        <p><strong style="color:#F3EDE5;">Nasher Miles</strong> — Colourful HENRY</p>
+
+  - elementId: leg3-dot
+    elementType: shape
+    bounds: [900, 256, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$gold"
+
+  - elementId: leg3-text
+    elementType: text
+    bounds: [924, 252, 276, 22]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      wrap: false
+      text: |
+        <p><strong style="color:#C9A84C;">▶ Assembly</strong> — Current position</p>
+
+  - elementId: leg4-dot
+    elementType: shape
+    bounds: [900, 288, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#C084FC"
+
+  - elementId: leg4-text
+    elementType: text
+    bounds: [924, 284, 276, 22]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      wrap: false
+      text: |
+        <p><strong style="color:#F3EDE5;">Mokobara</strong> — Premium Indian D2C</p>
+
+  - elementId: leg5-dot
+    elementType: shape
+    bounds: [900, 320, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: leg5-text
+    elementType: text
+    bounds: [924, 316, 276, 22]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      wrap: false
+      text: |
+        <p><strong style="color:#F3EDE5;">Samsonite</strong> — Global premium</p>
+
+  - elementId: leg6-dot
+    elementType: shape
+    bounds: [900, 352, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#C9A84C40"
+    border:
+      style: dash
+      width: 1
+      color: "#C9A84C60"
+
+  - elementId: leg6-text
+    elementType: text
+    bounds: [924, 348, 276, 22]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      wrap: false
+      text: |
+        <p><strong style="color:#F3EDE5;">Assembly (Potential)</strong></p>
+
+  # Divider
+  - elementId: r-div
+    elementType: shape
+    bounds: [900, 390, 300, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  # Key Insight Box
+  - elementId: insight-bg
+    elementType: shape
+    bounds: [900, 410, 300, 268]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#A56A3A10"
+    border:
+      style: solid
+      width: 1
+      color: "#A56A3A30"
+
+  - elementId: insight-label
+    elementType: text
+    bounds: [920, 424, 260, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "$accentLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>THE ASPIRATION GAP</p>
+
+  - elementId: insight-body
+    elementType: text
+    bounds: [920, 452, 260, 220]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF80"
+      lineHeight: 1.6
+      text: |
+        <p>Assembly sits in a <strong style="color:#F3EDE5;">dangerous zone</strong> — same price as Nasher Miles with half the aspiration.</p>
+        <p style="margin-top:10px">The map reveals where Assembly <em style="color:#C9A84C;">could</em> be: same price point, higher aspiration index — with the right brand story.</p>
+        <p style="margin-top:10px">The gap is not product. <strong style="color:#F3EDE5;">The gap is brand.</strong></p>

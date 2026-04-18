@@ -1,0 +1,475 @@
+pageType: content
+background:
+  type: solid
+  color: "$backgroundDark"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 30, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#0F3D3580"
+      wrap: false
+      text: |
+        <p>07 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 58, 300, 24]
+    content:
+      style: "$eyebrow"
+      color: "$primary"
+      wrap: false
+      text: |
+        <p>CRITICAL STP EVALUATION</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 86, 600, 120]
+    content:
+      style: "$sectionHeading"
+      text: |
+        <p>Where the Strategy<br><em style="color:#A56A3A;">Broke Down</em></p>
+
+  # Evaluation Grid — 3 columns x 2 rows
+  # Card 1
+  - elementId: e1-bg
+    elementType: shape
+    bounds: [80, 216, 370, 218]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: e1-num
+    elementType: text
+    bounds: [100, 228, 60, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E60"
+      wrap: false
+      text: |
+        <p>01</p>
+
+  - elementId: e1-title
+    elementType: text
+    bounds: [100, 252, 330, 48]
+    content:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Psychographically shallow segmentation</strong></p>
+
+  - elementId: e1-body
+    elementType: text
+    bounds: [100, 306, 330, 74]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>HENRY label correct but psychographic depth lacking. "Less is more" attracts only the design-minimalist sub-segment.</p>
+
+  - elementId: e1-verdict-bg
+    elementType: shape
+    bounds: [100, 382, 110, 28]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B12"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B20"
+
+  - elementId: e1-verdict
+    elementType: text
+    bounds: [100, 382, 110, 28]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$red"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>CRITICAL GAP</p>
+
+  # Card 2
+  - elementId: e2-bg
+    elementType: shape
+    bounds: [466, 216, 370, 218]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: e2-num
+    elementType: text
+    bounds: [486, 228, 60, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E60"
+      wrap: false
+      text: |
+        <p>02</p>
+
+  - elementId: e2-title
+    elementType: text
+    bounds: [486, 252, 330, 48]
+    content:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Right segment, wrong brand voice</strong></p>
+
+  - elementId: e2-body
+    elementType: text
+    bounds: [486, 306, 330, 74]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>The targeting decision was valid. The failure was deploying a minimalist brand voice into a segment that responds to aspiration.</p>
+
+  - elementId: e2-verdict-bg
+    elementType: shape
+    bounds: [486, 382, 120, 28]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#A56A3A12"
+    border:
+      style: solid
+      width: 1
+      color: "#A56A3A20"
+
+  - elementId: e2-verdict
+    elementType: text
+    bounds: [486, 382, 130, 28]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$accent"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>PARTIALLY FLAWED</p>
+
+  # Card 3
+  - elementId: e3-bg
+    elementType: shape
+    bounds: [852, 216, 370, 218]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: e3-num
+    elementType: text
+    bounds: [872, 228, 60, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E60"
+      wrap: false
+      text: |
+        <p>03</p>
+
+  - elementId: e3-title
+    elementType: text
+    bounds: [872, 252, 330, 48]
+    content:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Price point ≠ Brand position</strong></p>
+
+  - elementId: e3-body
+    elementType: text
+    bounds: [872, 306, 330, 74]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>"50% design, 50% functionality at the right price" is a feature description. Assembly owned no word in the consumer's mind.</p>
+
+  - elementId: e3-verdict-bg
+    elementType: shape
+    bounds: [872, 382, 110, 28]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B12"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B20"
+
+  - elementId: e3-verdict
+    elementType: text
+    bounds: [872, 382, 110, 28]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$red"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>CRITICAL GAP</p>
+
+  # Card 4
+  - elementId: e4-bg
+    elementType: shape
+    bounds: [80, 450, 370, 218]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: e4-num
+    elementType: text
+    bounds: [100, 462, 60, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E60"
+      wrap: false
+      text: |
+        <p>04</p>
+
+  - elementId: e4-title
+    elementType: text
+    bounds: [100, 486, 330, 48]
+    content:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Minimalism without a cultural story</strong></p>
+
+  - elementId: e4-body
+    elementType: text
+    bounds: [100, 540, 330, 74]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>Muji, Away, Bellroy all have stories that make minimalism intentional. Assembly had the aesthetic but no narrative.</p>
+
+  - elementId: e4-verdict-bg
+    elementType: shape
+    bounds: [100, 616, 110, 28]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B12"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B20"
+
+  - elementId: e4-verdict
+    elementType: text
+    bounds: [100, 616, 120, 28]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$red"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>STRUCTURAL GAP</p>
+
+  # Card 5
+  - elementId: e5-bg
+    elementType: shape
+    bounds: [466, 450, 370, 218]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: e5-num
+    elementType: text
+    bounds: [486, 462, 60, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E60"
+      wrap: false
+      text: |
+        <p>05</p>
+
+  - elementId: e5-title
+    elementType: text
+    bounds: [486, 486, 330, 48]
+    content:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Logo invisibility = zero brand equity</strong></p>
+
+  - elementId: e5-body
+    elementType: text
+    bounds: [486, 540, 330, 74]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>No logo on products means zero brand impressions. ₹2.3 Cr spent acquiring invisible customers annually.</p>
+
+  - elementId: e5-verdict-bg
+    elementType: shape
+    bounds: [486, 616, 140, 28]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B12"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B20"
+
+  - elementId: e5-verdict
+    elementType: text
+    bounds: [486, 616, 140, 28]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$red"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>BRAND EQUITY LEAK</p>
+
+  # Card 6
+  - elementId: e6-bg
+    elementType: shape
+    bounds: [852, 450, 370, 218]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: e6-num
+    elementType: text
+    bounds: [872, 462, 60, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#2E2E2E60"
+      wrap: false
+      text: |
+        <p>06</p>
+
+  - elementId: e6-title
+    elementType: text
+    bounds: [872, 486, 330, 48]
+    content:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Wrong framework accepted from sharks</strong></p>
+
+  - elementId: e6-body
+    elementType: text
+    bounds: [872, 540, 330, 74]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>Assembly is structurally a community-driven D2C brand. Founders accepted the celebrity-brand critique without reframing.</p>
+
+  - elementId: e6-verdict-bg
+    elementType: shape
+    bounds: [872, 616, 120, 28]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#A56A3A12"
+    border:
+      style: solid
+      width: 1
+      color: "#A56A3A20"
+
+  - elementId: e6-verdict
+    elementType: text
+    bounds: [872, 616, 120, 28]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$accent"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>SHARED FAILURE</p>

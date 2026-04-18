@@ -1,0 +1,255 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 50, 120, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#0F3D354D"
+      wrap: false
+      text: |
+        <p>01 / 10</p>
+
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 80, 200, 24]
+    content:
+      style: "$eyebrow"
+      color: "$primary"
+      wrap: false
+      text: |
+        <p>THE PRODUCT</p>
+
+  - elementId: heading
+    elementType: text
+    bounds: [80, 120, 480, 120]
+    content:
+      style: "$sectionHeading"
+      text: |
+        <p>What Assembly<br><em style="color:#6E8F8B;">Actually Sells</em></p>
+
+  - elementId: body-text
+    elementType: text
+    bounds: [80, 260, 480, 180]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.6
+      text: |
+        <p>Assembly is a D2C luggage brand targeting India's mid-premium segment. Born post-COVID, the brand positioned itself as the design-forward alternative between mass-market VIP and premium Mokobara — offering 50% design, 50% functionality at ₹4,000–6,000.</p>
+
+  - elementId: unit-title-bg
+    elementType: shape
+    bounds: [80, 460, 480, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: unit-title
+    elementType: text
+    bounds: [96, 460, 448, 36]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF99"
+      letterSpacing: 1.5
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>UNIT ECONOMICS — ₹5,000 BAG (NSP)</p>
+
+  - elementId: unit-bg
+    elementType: shape
+    bounds: [80, 496, 480, 96]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  # Unit row - all values and labels in one text block to avoid overlap
+  - elementId: unit-row
+    elementType: text
+    bounds: [85, 500, 470, 88]
+    content:
+      fontSize: 13
+      fontFamily: "SortsMillGoudy"
+      color: "$text"
+      lineHeight: 1.3
+      align: [center, top]
+      text: |
+        <p><span style="color:#2E2E2E;">₹100</span>  <span style="color:#C0392B;">−₹15</span>  <span style="color:#2E2E2E;">₹85</span>  <span style="color:#C0392B;">−₹42</span>  <span style="color:#0F3D35;">₹43</span>  <span style="color:#C0392B;">−₹20</span>  <span style="color:#C0392B;">−₹20</span>  <span style="color:#6E8F8B;">₹15</span></p>
+        <p><span style="font-size:9px; font-family:QuattrocentoSans; color:#2E2E2E66;">MRP   GST   NET   COGS   MARGIN   SHIP   MKTG   CONTRIB</span></p>
+
+  # RIGHT COLUMN — VP Grid
+  - elementId: vp1-bg
+    elementType: shape
+    bounds: [600, 80, 300, 260]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: vp1-icon
+    elementType: icon
+    bounds: [624, 100, 28, 28]
+    iconName: "fas:industry"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: vp1-head
+    elementType: text
+    bounds: [624, 138, 252, 32]
+    content:
+      style: "$cardHeading"
+      fontSize: 22
+      wrap: false
+      text: |
+        <p>Indian Supply Chain</p>
+
+  - elementId: vp1-body
+    elementType: text
+    bounds: [624, 174, 252, 148]
+    content:
+      style: "$cardBody"
+      fontSize: 15
+      lineHeight: 1.5
+      text: |
+        <p>Made in India — lower COGS vs Chinese imports, a genuine competitive moat that was never positioned as a brand story.</p>
+
+  - elementId: vp2-bg
+    elementType: shape
+    bounds: [920, 80, 300, 260]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: vp2-icon
+    elementType: icon
+    bounds: [944, 100, 28, 28]
+    iconName: "fas:palette"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: vp2-head
+    elementType: text
+    bounds: [944, 138, 252, 32]
+    content:
+      style: "$cardHeading"
+      fontSize: 22
+      wrap: false
+      text: |
+        <p>Minimalist Design</p>
+
+  - elementId: vp2-body
+    elementType: text
+    bounds: [944, 174, 252, 148]
+    content:
+      style: "$cardBody"
+      fontSize: 15
+      lineHeight: 1.5
+      text: |
+        <p>Clean aesthetic, grey palette, USB ports, laptop compartments. Functional design without visible lifestyle cues.</p>
+
+  - elementId: vp3-bg
+    elementType: shape
+    bounds: [600, 360, 300, 260]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: vp3-icon
+    elementType: icon
+    bounds: [624, 380, 28, 28]
+    iconName: "fas:tag"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: vp3-head
+    elementType: text
+    bounds: [624, 418, 252, 32]
+    content:
+      style: "$cardHeading"
+      fontSize: 22
+      wrap: false
+      text: |
+        <p>Right Price Point</p>
+
+  - elementId: vp3-body
+    elementType: text
+    bounds: [624, 454, 252, 148]
+    content:
+      style: "$cardBody"
+      fontSize: 15
+      lineHeight: 1.5
+      text: |
+        <p>₹4,000–6,000 segment — same as Nasher Miles, 40% below Mokobara, 80% below Samsonite. Price bracket validated.</p>
+
+  - elementId: vp4-bg
+    elementType: shape
+    bounds: [920, 360, 300, 260]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: vp4-icon
+    elementType: icon
+    bounds: [944, 380, 28, 28]
+    iconName: "fas:truck"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: vp4-head
+    elementType: text
+    bounds: [944, 418, 252, 32]
+    content:
+      style: "$cardHeading"
+      fontSize: 22
+      wrap: false
+      text: |
+        <p>D2C + Marketplace</p>
+
+  - elementId: vp4-body
+    elementType: text
+    bounds: [944, 454, 252, 148]
+    content:
+      style: "$cardBody"
+      fontSize: 15
+      lineHeight: 1.5
+      text: |
+        <p>60% through Amazon/Flipkart. First breakeven month achieved Oct 2023 — positive unit economics before brand equity.</p>

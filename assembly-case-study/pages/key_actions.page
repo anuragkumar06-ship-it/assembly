@@ -1,0 +1,299 @@
+pageType: content
+background:
+  type: solid
+  color: "$offwhite"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 30, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#0F3D354D"
+      wrap: false
+      text: |
+        <p>09 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 58, 200, 24]
+    content:
+      style: "$eyebrow"
+      color: "$primary"
+      wrap: false
+      text: |
+        <p>PRIORITY ACTIONS</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 86, 600, 120]
+    content:
+      style: "$sectionHeading"
+      text: |
+        <p>If I Were<br><em style="color:#0F3D35;">The Founder</em></p>
+
+  # Three action cards
+  # Card 1
+  - elementId: a1-bg
+    elementType: shape
+    bounds: [80, 216, 370, 300]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: a1-header
+    elementType: shape
+    bounds: [80, 216, 370, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: a1-num
+    elementType: text
+    bounds: [100, 216, 60, 60]
+    content:
+      fontSize: 32
+      fontFamily: "SortsMillGoudy"
+      color: "#FFFFFF20"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01</p>
+
+  - elementId: a1-label
+    elementType: text
+    bounds: [160, 216, 270, 60]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      letterSpacing: 1.5
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>BRAND STORY</p>
+
+  - elementId: a1-title
+    elementType: text
+    bounds: [100, 296, 330, 56]
+    content:
+      fontSize: 17
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Build the story before the next funding round</strong></p>
+
+  - elementId: a1-body
+    elementType: text
+    bounds: [100, 358, 330, 90]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>A founder manifesto, a design journal, a factory film. Make the Indian supply chain the brand story — not a footnote. Show the craftspeople.</p>
+
+  - elementId: a1-impact
+    elementType: text
+    bounds: [100, 452, 330, 40]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$primary"
+      lineHeight: 1.4
+      text: |
+        <p><strong>Cost: near-zero · Impact: transforms brand identity</strong></p>
+
+  # Card 2
+  - elementId: a2-bg
+    elementType: shape
+    bounds: [466, 216, 370, 300]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: a2-header
+    elementType: shape
+    bounds: [466, 216, 370, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: a2-num
+    elementType: text
+    bounds: [486, 216, 60, 60]
+    content:
+      fontSize: 32
+      fontFamily: "SortsMillGoudy"
+      color: "#FFFFFF20"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02</p>
+
+  - elementId: a2-label
+    elementType: text
+    bounds: [546, 216, 270, 60]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      letterSpacing: 1.5
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>COMMUNITY OVER CELEBRITY</p>
+
+  - elementId: a2-title
+    elementType: text
+    bounds: [486, 296, 330, 44]
+    content:
+      fontSize: 17
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Credibility ambassadors, not just reach</strong></p>
+
+  - elementId: a2-body
+    elementType: text
+    bounds: [486, 348, 330, 100]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>50 high-credibility advocates in design, architecture, and startup culture. The Bellroy model: laser focus on a niche, then expand.</p>
+
+  - elementId: a2-impact
+    elementType: text
+    bounds: [486, 458, 330, 40]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$primary"
+      lineHeight: 1.4
+      text: |
+        <p><strong>Target: 50 advocates · CAC reduction: ~30%</strong></p>
+
+  # Card 3
+  - elementId: a3-bg
+    elementType: shape
+    bounds: [852, 216, 370, 300]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: a3-header
+    elementType: shape
+    bounds: [852, 216, 370, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: a3-num
+    elementType: text
+    bounds: [872, 216, 60, 60]
+    content:
+      fontSize: 32
+      fontFamily: "SortsMillGoudy"
+      color: "#FFFFFF20"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03</p>
+
+  - elementId: a3-label
+    elementType: text
+    bounds: [932, 216, 270, 60]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      letterSpacing: 1.5
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>EVERY BAG A BILLBOARD</p>
+
+  - elementId: a3-title
+    elementType: text
+    bounds: [872, 296, 330, 56]
+    content:
+      fontSize: 17
+      fontFamily: "QuattrocentoSans"
+      color: "$text"
+      lineHeight: 1.3
+      text: |
+        <p><strong>Emboss the three-wave mark on every product</strong></p>
+
+  - elementId: a3-body
+    elementType: text
+    bounds: [872, 358, 330, 90]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "$textLight"
+      lineHeight: 1.5
+      text: |
+        <p>2L customers × 50 airport impressions per journey × 4 journeys per year = 40 Cr brand impressions annually at zero cost.</p>
+
+  - elementId: a3-impact
+    elementType: text
+    bounds: [872, 452, 330, 40]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$primary"
+      lineHeight: 1.4
+      text: |
+        <p><strong>40 Crore impressions · ₹0 incremental spend</strong></p>
+
+  # Final statement
+  - elementId: fs-bg
+    elementType: shape
+    bounds: [80, 540, 1120, 100]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: fs-text
+    elementType: text
+    bounds: [108, 546, 800, 88]
+    content:
+      fontSize: 18
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>"The segment is not wrong. The segment is not even targeting the wrong people. What needs to change is the brand's ability to speak the emotional language that segment responds to."</p>

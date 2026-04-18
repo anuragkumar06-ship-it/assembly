@@ -1,0 +1,544 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 40, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      wrap: false
+      text: |
+        <p>02 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 68, 300, 24]
+    content:
+      style: "$eyebrowLight"
+      wrap: false
+      text: |
+        <p>THE SHARK TANK MOMENT</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 96, 600, 120]
+    content:
+      style: "$sectionHeadingLight"
+      text: |
+        <p>Five Exits,<br><em style="color:#F3EDE580;">Five Different Lenses</em></p>
+
+  # Primary quote box
+  - elementId: quote-box
+    elementType: shape
+    bounds: [80, 220, 1120, 100]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF0A"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF14"
+
+  - elementId: quote-accent
+    elementType: shape
+    bounds: [80, 220, 4, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: quote-text
+    elementType: text
+    bounds: [108, 228, 1060, 68]
+    content:
+      fontSize: 20
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.4
+      text: |
+        <p><em>"There are less lifestyle elements in your design right now and too much minimalist vibe... you need a brand guy who can help you. I can't make up my mind. Unfortunately, I'm out."</em></p>
+
+  - elementId: quote-attr
+    elementType: text
+    bounds: [108, 296, 1060, 20]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#F3EDE560"
+      text: |
+        <p>— Aman Gupta, Co-founder & CMO, boAt · Primary objection of the episode</p>
+
+  # Shark pills row — 5 cards
+  # Shark 1: Aman Gupta
+  - elementId: s1-bg
+    elementType: shape
+    bounds: [80, 352, 208, 290]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF12"
+
+  - elementId: s1-avatar
+    elementType: shape
+    bounds: [104, 372, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#C9A84C20"
+
+  - elementId: s1-initials
+    elementType: text
+    bounds: [100, 372, 48, 48]
+    content:
+      fontSize: 16
+      fontFamily: "SortsMillGoudy"
+      color: "$gold"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>AG</p>
+
+  - elementId: s1-name
+    elementType: text
+    bounds: [104, 424, 160, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Aman Gupta</strong></p>
+
+  - elementId: s1-co
+    elementType: text
+    bounds: [104, 448, 160, 20]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>CMO, boAt</p>
+
+  - elementId: s1-quote
+    elementType: text
+    bounds: [104, 478, 160, 80]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      lineHeight: 1.5
+      text: |
+        <p><em>"Too much minimalist vibe. You need a brand guy."</em></p>
+
+  - elementId: s1-verdict-bg
+    elementType: shape
+    bounds: [104, 558, 70, 26]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B20"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B30"
+
+  - elementId: s1-verdict
+    elementType: text
+    bounds: [104, 558, 70, 26]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$redLight"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>OUT</p>
+
+  # Shark 2: Namita Thapar
+  - elementId: s2-bg
+    elementType: shape
+    bounds: [308, 352, 208, 290]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF12"
+
+  - elementId: s2-avatar
+    elementType: shape
+    bounds: [332, 372, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#3ECFB220"
+
+  - elementId: s2-initials
+    elementType: text
+    bounds: [328, 372, 48, 48]
+    content:
+      fontSize: 16
+      fontFamily: "SortsMillGoudy"
+      color: "$secondaryLight"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>NT</p>
+
+  - elementId: s2-name
+    elementType: text
+    bounds: [332, 424, 160, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Namita Thapar</strong></p>
+
+  - elementId: s2-co
+    elementType: text
+    bounds: [332, 448, 160, 20]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>Exec. Dir., Emcure</p>
+
+  - elementId: s2-quote
+    elementType: text
+    bounds: [332, 478, 160, 80]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      lineHeight: 1.5
+      text: |
+        <p><em>"How can your product sell if it's not visible online?"</em></p>
+
+  - elementId: s2-verdict-bg
+    elementType: shape
+    bounds: [332, 558, 70, 26]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B20"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B30"
+
+  - elementId: s2-verdict
+    elementType: text
+    bounds: [332, 558, 70, 26]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$redLight"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>OUT</p>
+
+  # Shark 3: Peyush Bansal
+  - elementId: s3-bg
+    elementType: shape
+    bounds: [536, 352, 208, 290]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF12"
+
+  - elementId: s3-avatar
+    elementType: shape
+    bounds: [560, 372, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FCD34D20"
+
+  - elementId: s3-initials
+    elementType: text
+    bounds: [556, 372, 48, 48]
+    content:
+      fontSize: 16
+      fontFamily: "SortsMillGoudy"
+      color: "#FCD34D"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>PB</p>
+
+  - elementId: s3-name
+    elementType: text
+    bounds: [560, 424, 160, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Peyush Bansal</strong></p>
+
+  - elementId: s3-co
+    elementType: text
+    bounds: [560, 448, 160, 20]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>CEO, Lenskart</p>
+
+  - elementId: s3-quote
+    elementType: text
+    bounds: [560, 478, 160, 70]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      lineHeight: 1.5
+      text: |
+        <p><em>"Quality is your only business plan."</em></p>
+
+  - elementId: s3-verdict-bg
+    elementType: shape
+    bounds: [560, 558, 70, 26]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B20"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B30"
+
+  - elementId: s3-verdict
+    elementType: text
+    bounds: [560, 558, 70, 26]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$redLight"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>OUT</p>
+
+  # Shark 4: Vineeta Singh
+  - elementId: s4-bg
+    elementType: shape
+    bounds: [764, 352, 208, 290]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF12"
+
+  - elementId: s4-avatar
+    elementType: shape
+    bounds: [788, 372, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FB718520"
+
+  - elementId: s4-initials
+    elementType: text
+    bounds: [784, 372, 48, 48]
+    content:
+      fontSize: 16
+      fontFamily: "SortsMillGoudy"
+      color: "#FB7185"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>VS</p>
+
+  - elementId: s4-name
+    elementType: text
+    bounds: [788, 424, 160, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Vineeta Singh</strong></p>
+
+  - elementId: s4-co
+    elementType: text
+    bounds: [788, 448, 160, 20]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>CEO, SUGAR Cosmetics</p>
+
+  - elementId: s4-quote
+    elementType: text
+    bounds: [788, 478, 160, 80]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      lineHeight: 1.5
+      text: |
+        <p><em>"You have a lot of investors. All the best."</em></p>
+
+  - elementId: s4-verdict-bg
+    elementType: shape
+    bounds: [788, 558, 70, 26]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#C0392B20"
+    border:
+      style: solid
+      width: 1
+      color: "#C0392B30"
+
+  - elementId: s4-verdict
+    elementType: text
+    bounds: [788, 558, 70, 26]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$redLight"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>OUT</p>
+
+  # Shark 5: Anupam Mittal (highlighted)
+  - elementId: s5-bg
+    elementType: shape
+    bounds: [992, 352, 208, 290]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#6E8F8B15"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B30"
+
+  - elementId: s5-avatar
+    elementType: shape
+    bounds: [1016, 372, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#C084FC20"
+
+  - elementId: s5-initials
+    elementType: text
+    bounds: [1012, 372, 48, 48]
+    content:
+      fontSize: 16
+      fontFamily: "SortsMillGoudy"
+      color: "#C084FC"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>AM</p>
+
+  - elementId: s5-name
+    elementType: text
+    bounds: [1016, 424, 160, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Anupam Mittal</strong></p>
+
+  - elementId: s5-co
+    elementType: text
+    bounds: [1016, 448, 160, 20]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>Founder, Shaadi.com</p>
+
+  - elementId: s5-quote
+    elementType: text
+    bounds: [1016, 478, 160, 80]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      lineHeight: 1.5
+      text: |
+        <p><em>₹85L for 10% + 10% royalty. Offer rejected — valuation mismatch.</em></p>
+
+  - elementId: s5-verdict-bg
+    elementType: shape
+    bounds: [1016, 558, 120, 26]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#A56A3A20"
+    border:
+      style: solid
+      width: 1
+      color: "#A56A3A30"
+
+  - elementId: s5-verdict
+    elementType: text
+    bounds: [1016, 558, 120, 26]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$accentLight"
+      letterSpacing: 1
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>OFFER MADE</p>

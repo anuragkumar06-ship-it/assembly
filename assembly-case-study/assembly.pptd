@@ -1,0 +1,136 @@
+title: "Assembly · Shark Tank India S3 · Case Study"
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#0F3D35"
+    primaryDark: "#0a2921"
+    primaryMid: "#1B5A50"
+    secondary: "#6E8F8B"
+    secondaryLight: "#7FA3A0"
+    accent: "#A56A3A"
+    accentLight: "#B07A4F"
+    background: "#F3EDE5"
+    backgroundDark: "#E8E1D8"
+    offwhite: "#F8F6F2"
+    text: "#2E2E2E"
+    textLight: "#3A3A3A"
+    border: "#D6CEC4"
+    red: "#C0392B"
+    redLight: "#E88"
+    gold: "#C9A84C"
+    surfaceDark: "#FFFFFF0A"
+    borderDark: "#FFFFFF14"
+  textStyles:
+    coverTitle:
+      fontSize: 56
+      color: "$background"
+      fontFamily: "SortsMillGoudy"
+      lineHeight: 1.0
+      fontStyle: normal
+    coverSubtitle:
+      fontSize: 24
+      color: "$background"
+      fontFamily: "SortsMillGoudy"
+      lineHeight: 1.4
+      fontStyle: italic
+    sectionHeading:
+      fontSize: 44
+      color: "$text"
+      fontFamily: "SortsMillGoudy"
+      lineHeight: 1.05
+    sectionHeadingLight:
+      fontSize: 44
+      color: "$background"
+      fontFamily: "SortsMillGoudy"
+      lineHeight: 1.05
+    cardHeading:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "SortsMillGoudy"
+      lineHeight: 1.2
+    cardHeadingLight:
+      fontSize: 24
+      color: "$background"
+      fontFamily: "SortsMillGoudy"
+      lineHeight: 1.2
+    eyebrow:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans"
+      letterSpacing: 2
+    eyebrowLight:
+      fontSize: 12
+      color: "$secondaryLight"
+      fontFamily: "QuattrocentoSans"
+      letterSpacing: 2
+    body:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans"
+      lineHeight: 1.6
+    bodyLight:
+      fontSize: 20
+      color: "#F3EDE5CC"
+      fontFamily: "QuattrocentoSans"
+      lineHeight: 1.6
+    cardBody:
+      fontSize: 16
+      color: "$textLight"
+      fontFamily: "QuattrocentoSans"
+      lineHeight: 1.5
+    metric:
+      fontSize: 42
+      color: "$background"
+      fontFamily: "SortsMillGoudy"
+      lineHeight: 1.0
+    annotation:
+      fontSize: 12
+      color: "#2E2E2E80"
+      fontFamily: "QuattrocentoSans"
+      letterSpacing: 1
+    tag:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans"
+      letterSpacing: 1
+  tableStyles:
+    default:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      headerFill: "$primary"
+      headerColor: "$background"
+      headerBold: true
+      bodyFill:
+        - "$offwhite"
+        - "#FFFFFF"
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+    dark:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      headerFill: "$primary"
+      headerColor: "$background"
+      headerBold: true
+      bodyFill:
+        - "$surfaceDark"
+        - "$surfaceDark"
+      bodyColor: "$background"
+      border:
+        style: solid
+        width: 1
+        color: "$borderDark"
+pages:
+  - pages/cover.page
+  - pages/product.page
+  - pages/shark_summary.page
+  - pages/shark_deep_dive.page
+  - pages/segmentation.page
+  - pages/competitive_comparison.page
+  - pages/positioning_map.page
+  - pages/stp_evaluation.page
+  - pages/recommendation.page
+  - pages/key_actions.page
+  - pages/closing.page

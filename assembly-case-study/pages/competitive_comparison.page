@@ -1,0 +1,210 @@
+pageType: content
+background:
+  type: solid
+  color: "$text"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 40, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      wrap: false
+      text: |
+        <p>05 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 68, 300, 24]
+    content:
+      style: "$eyebrowLight"
+      wrap: false
+      text: |
+        <p>COMPETITIVE POSITIONING</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 96, 600, 120]
+    content:
+      style: "$sectionHeadingLight"
+      text: |
+        <p>Assembly vs<br><em style="color:#7FA3A0;">The Market</em></p>
+
+  # VS Layout container
+  - elementId: vs-bg
+    elementType: shape
+    bounds: [80, 220, 1120, 400]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  # LEFT COLUMN — Assembly
+  - elementId: left-col-bg
+    elementType: shape
+    bounds: [80, 220, 548, 400]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF04"
+
+  - elementId: left-brand
+    elementType: text
+    bounds: [108, 240, 300, 40]
+    content:
+      fontSize: 30
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      wrap: false
+      text: |
+        <p>Assembly</p>
+
+  - elementId: left-sub
+    elementType: text
+    bounds: [108, 280, 300, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      wrap: false
+      text: |
+        <p>Shark Tank S3 · No deal</p>
+
+  # Assembly attributes
+  - elementId: left-attrs
+    elementType: text
+    bounds: [108, 320, 490, 260]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      lineHeight: 1.8
+      text: |
+        <p><span style="color:#FFFFFF40; font-size:11px; letter-spacing:1px;">PHILOSOPHY</span>  Minimalist — "50% design, 50% function"</p>
+        <p><span style="color:#FFFFFF40; font-size:11px; letter-spacing:1px;">DESIGN</span>  Muted grey palette, clean lines, no logo on product</p>
+        <p><span style="color:#FFFFFF40; font-size:11px; letter-spacing:1px;">PRICE</span>  ₹4,000–6,000 mid-range</p>
+        <p><span style="color:#FFFFFF40; font-size:11px; letter-spacing:1px;">AMBASSADOR</span>  Ranvijay Singha (post-rejection)</p>
+        <p><span style="color:#FFFFFF40; font-size:11px; letter-spacing:1px;">COLOURS</span>  Limited — scroll-invisible on marketplace</p>
+        <p><span style="color:#FFFFFF40; font-size:11px; letter-spacing:1px;">ASPIRATION</span>  Low — brand says nothing about buyer identity</p>
+
+  # VS divider line
+  - elementId: vs-line
+    elementType: shape
+    bounds: [638, 240, 0, 360]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF15"
+
+  # RIGHT COLUMN — Nasher Miles (winner)
+  - elementId: right-col-bg
+    elementType: shape
+    bounds: [652, 220, 548, 400]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#6E8F8B10"
+
+  - elementId: right-brand
+    elementType: text
+    bounds: [680, 240, 300, 40]
+    content:
+      fontSize: 30
+      fontFamily: "SortsMillGoudy"
+      color: "$secondaryLight"
+      wrap: false
+      text: |
+        <p>Nasher Miles</p>
+
+  - elementId: right-sub
+    elementType: text
+    bounds: [680, 280, 400, 24]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      wrap: false
+      text: |
+        <p>Same episode · All 5 sharks invested</p>
+
+  # Nasher Miles attributes
+  - elementId: right-attrs
+    elementType: text
+    bounds: [680, 320, 490, 260]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF90"
+      lineHeight: 1.8
+      text: |
+        <p><span style="color:#7FA3A0; font-size:11px; letter-spacing:1px;">PHILOSOPHY</span>  Joyful colour — "Travel is emotion"</p>
+        <p><span style="color:#7FA3A0; font-size:11px; letter-spacing:1px;">DESIGN</span>  100+ vibrant colours — instant scroll-stop</p>
+        <p><span style="color:#7FA3A0; font-size:11px; letter-spacing:1px;">PRICE</span>  Similar mid-range bracket</p>
+        <p><span style="color:#7FA3A0; font-size:11px; letter-spacing:1px;">AMBASSADOR</span>  Rishabh Pant — India's most aspirational cricketer</p>
+        <p><span style="color:#7FA3A0; font-size:11px; letter-spacing:1px;">COLOURS</span>  100+ — dominates marketplace thumbnails</p>
+        <p><span style="color:#7FA3A0; font-size:11px; letter-spacing:1px;">ASPIRATION</span>  High — colour = identity signal for HENRY buyer</p>
+
+  # Bottom result bars
+  - elementId: left-result
+    elementType: shape
+    bounds: [80, 620, 548, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#C0392B10"
+
+  - elementId: left-result-text
+    elementType: text
+    bounds: [108, 620, 490, 44]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#E88080"
+      letterSpacing: 1
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>ALL 5 SHARKS EXITED — NO DEAL</p>
+
+  - elementId: right-result
+    elementType: shape
+    bounds: [652, 620, 548, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#6E8F8B15"
+
+  - elementId: right-result-text
+    elementType: text
+    bounds: [680, 620, 490, 44]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>₹3 CRORE FOR 1.5% — ALL SHARKS INVESTED</p>
+
+  # Bottom insight
+  - elementId: insight
+    elementType: text
+    bounds: [80, 682, 1120, 24]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF60"
+      align: [center, middle]
+      text: |
+        <p><strong style="color:#F3EDE5;">The core finding:</strong> Same segment, same price bracket, same category — radically different outcomes.</p>

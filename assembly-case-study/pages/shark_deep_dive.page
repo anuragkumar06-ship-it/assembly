@@ -1,0 +1,890 @@
+pageType: content
+background:
+  type: solid
+  color: "$primaryDark"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 30, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      wrap: false
+      text: |
+        <p>03 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 58, 300, 24]
+    content:
+      style: "$eyebrowLight"
+      wrap: false
+      text: |
+        <p>DECONSTRUCTING THE CRITIQUE</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 86, 800, 60]
+    content:
+      style: "$sectionHeadingLight"
+      fontSize: 40
+      text: |
+        <p>Every Shark's Lens — <em style="color:#F3EDE580;">Validated</em></p>
+
+  # 5 Shark analysis cards — 5-column grid layout
+  # Each card: 216px wide, 580px tall area
+
+  # === CARD 1: AMAN GUPTA ===
+  - elementId: c1-bg
+    elementType: shape
+    bounds: [80, 156, 216, 544]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c1-top
+    elementType: shape
+    bounds: [80, 156, 216, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$gold"
+
+  - elementId: c1-avatar
+    elementType: shape
+    bounds: [100, 176, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#C9A84C18"
+
+  - elementId: c1-init
+    elementType: text
+    bounds: [96, 176, 44, 44]
+    content:
+      fontSize: 14
+      fontFamily: "SortsMillGoudy"
+      color: "$gold"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>AG</p>
+
+  - elementId: c1-name
+    elementType: text
+    bounds: [100, 224, 176, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Aman Gupta</strong></p>
+
+  - elementId: c1-co
+    elementType: text
+    bounds: [100, 248, 176, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>Co-founder & CMO, boAt</p>
+
+  - elementId: c1-div
+    elementType: shape
+    bounds: [100, 278, 176, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c1-quote
+    elementType: text
+    bounds: [100, 290, 176, 76]
+    content:
+      fontSize: 13
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.5
+      text: |
+        <p>"Too much minimalist vibe. You need a brand guy."</p>
+
+  - elementId: c1-analysis-label
+    elementType: text
+    bounds: [100, 376, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>WHY IT MATTERS</p>
+
+  - elementId: c1-analysis
+    elementType: text
+    bounds: [100, 398, 176, 120]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p>Identified the <strong style="color:#F3EDE5;">systemic brand identity failure</strong>. Without brand identity, every subsequent problem becomes harder.</p>
+
+  - elementId: c1-validity-label
+    elementType: text
+    bounds: [100, 530, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>VALIDITY</p>
+
+  # 5 filled dots
+  - elementId: c1-d1
+    elementType: shape
+    bounds: [100, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c1-d2
+    elementType: shape
+    bounds: [116, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c1-d3
+    elementType: shape
+    bounds: [132, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c1-d4
+    elementType: shape
+    bounds: [148, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c1-d5
+    elementType: shape
+    bounds: [164, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c1-vnote
+    elementType: text
+    bounds: [100, 574, 176, 50]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF50"
+      lineHeight: 1.4
+      text: |
+        <p>Strongest strategic critique of the episode</p>
+
+  # === CARD 2: NAMITA THAPAR ===
+  - elementId: c2-bg
+    elementType: shape
+    bounds: [312, 156, 216, 544]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c2-top
+    elementType: shape
+    bounds: [312, 156, 216, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondaryLight"
+
+  - elementId: c2-avatar
+    elementType: shape
+    bounds: [332, 176, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#3ECFB218"
+
+  - elementId: c2-init
+    elementType: text
+    bounds: [328, 176, 44, 44]
+    content:
+      fontSize: 14
+      fontFamily: "SortsMillGoudy"
+      color: "$secondaryLight"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>NT</p>
+
+  - elementId: c2-name
+    elementType: text
+    bounds: [332, 224, 176, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Namita Thapar</strong></p>
+
+  - elementId: c2-co
+    elementType: text
+    bounds: [332, 248, 176, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>Exec. Dir., Emcure Pharma</p>
+
+  - elementId: c2-div
+    elementType: shape
+    bounds: [332, 278, 176, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c2-quote
+    elementType: text
+    bounds: [332, 290, 176, 58]
+    content:
+      fontSize: 11
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.5
+      text: |
+        <p>"How can your product sell if it's not visible online?"</p>
+
+  - elementId: c2-analysis-label
+    elementType: text
+    bounds: [332, 360, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>WHY IT MATTERS</p>
+
+  - elementId: c2-analysis
+    elementType: text
+    bounds: [332, 382, 176, 136]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p>Only shark who connected design to <strong style="color:#F3EDE5;">actual sales channel mechanics</strong>. Most actionable critique.</p>
+
+  - elementId: c2-validity-label
+    elementType: text
+    bounds: [332, 530, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>VALIDITY</p>
+
+  - elementId: c2-d1
+    elementType: shape
+    bounds: [332, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c2-d2
+    elementType: shape
+    bounds: [348, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c2-d3
+    elementType: shape
+    bounds: [364, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c2-d4
+    elementType: shape
+    bounds: [380, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c2-d5
+    elementType: shape
+    bounds: [396, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c2-vnote
+    elementType: text
+    bounds: [332, 574, 176, 50]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF50"
+      lineHeight: 1.4
+      text: |
+        <p>Strongest operational critique — scroll invisibility</p>
+
+  # === CARD 3: PEYUSH BANSAL ===
+  - elementId: c3-bg
+    elementType: shape
+    bounds: [544, 156, 216, 544]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c3-top
+    elementType: shape
+    bounds: [544, 156, 216, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FCD34D"
+
+  - elementId: c3-avatar
+    elementType: shape
+    bounds: [564, 176, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FCD34D18"
+
+  - elementId: c3-init
+    elementType: text
+    bounds: [560, 176, 44, 44]
+    content:
+      fontSize: 14
+      fontFamily: "SortsMillGoudy"
+      color: "#FCD34D"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>PB</p>
+
+  - elementId: c3-name
+    elementType: text
+    bounds: [564, 224, 176, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Peyush Bansal</strong></p>
+
+  - elementId: c3-co
+    elementType: text
+    bounds: [564, 248, 176, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>CEO, Lenskart</p>
+
+  - elementId: c3-div
+    elementType: shape
+    bounds: [564, 278, 176, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c3-quote
+    elementType: text
+    bounds: [564, 290, 176, 58]
+    content:
+      fontSize: 13
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.5
+      text: |
+        <p>"Quality is your only business plan."</p>
+
+  - elementId: c3-analysis-label
+    elementType: text
+    bounds: [564, 360, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>WHY IT MATTERS</p>
+
+  - elementId: c3-analysis
+    elementType: text
+    bounds: [564, 382, 176, 136]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p><strong style="color:#F3EDE5;">Contradicts his own playbook</strong> — Lenskart was built on price + convenience, not quality alone.</p>
+
+  - elementId: c3-validity-label
+    elementType: text
+    bounds: [564, 530, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>VALIDITY</p>
+
+  - elementId: c3-d1
+    elementType: shape
+    bounds: [564, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$gold"
+
+  - elementId: c3-d2
+    elementType: shape
+    bounds: [580, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$gold"
+
+  - elementId: c3-d3
+    elementType: shape
+    bounds: [596, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$gold"
+
+  - elementId: c3-d4
+    elementType: shape
+    bounds: [612, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+
+  - elementId: c3-d5
+    elementType: shape
+    bounds: [628, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+
+  - elementId: c3-vnote
+    elementType: text
+    bounds: [564, 574, 176, 50]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF50"
+      lineHeight: 1.4
+      text: |
+        <p>Partially valid — no constructive path offered</p>
+
+  # === CARD 4: VINEETA SINGH ===
+  - elementId: c4-bg
+    elementType: shape
+    bounds: [776, 156, 216, 544]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c4-top
+    elementType: shape
+    bounds: [776, 156, 216, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FB7185"
+
+  - elementId: c4-avatar
+    elementType: shape
+    bounds: [796, 176, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FB718518"
+
+  - elementId: c4-init
+    elementType: text
+    bounds: [792, 176, 44, 44]
+    content:
+      fontSize: 14
+      fontFamily: "SortsMillGoudy"
+      color: "#FB7185"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>VS</p>
+
+  - elementId: c4-name
+    elementType: text
+    bounds: [796, 224, 176, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Vineeta Singh</strong></p>
+
+  - elementId: c4-co
+    elementType: text
+    bounds: [796, 248, 176, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>CEO, SUGAR Cosmetics</p>
+
+  - elementId: c4-div
+    elementType: shape
+    bounds: [796, 278, 176, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c4-quote
+    elementType: text
+    bounds: [796, 290, 176, 58]
+    content:
+      fontSize: 13
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.5
+      text: |
+        <p>"You have a lot of investors. All the best."</p>
+
+  - elementId: c4-analysis-label
+    elementType: text
+    bounds: [796, 360, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>WHY IT MATTERS</p>
+
+  - elementId: c4-analysis
+    elementType: text
+    bounds: [796, 382, 176, 136]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p><strong style="color:#F3EDE5;">Weakest exit</strong> — not a business objection. Ignored the ask for mentorship. Likely group dynamics.</p>
+
+  - elementId: c4-validity-label
+    elementType: text
+    bounds: [796, 530, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>VALIDITY</p>
+
+  - elementId: c4-d1
+    elementType: shape
+    bounds: [796, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$gold"
+
+  - elementId: c4-d2
+    elementType: shape
+    bounds: [812, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+
+  - elementId: c4-d3
+    elementType: shape
+    bounds: [828, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+
+  - elementId: c4-d4
+    elementType: shape
+    bounds: [844, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+
+  - elementId: c4-d5
+    elementType: shape
+    bounds: [860, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+
+  - elementId: c4-vnote
+    elementType: text
+    bounds: [796, 574, 176, 50]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF50"
+      lineHeight: 1.4
+      text: |
+        <p>Weakest critique — not a business objection</p>
+
+  # === CARD 5: ANUPAM MITTAL ===
+  - elementId: c5-bg
+    elementType: shape
+    bounds: [1008, 156, 216, 554]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill:
+      type: solid
+      color: "#6E8F8B10"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B25"
+
+  - elementId: c5-top
+    elementType: shape
+    bounds: [1008, 156, 216, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#C084FC"
+
+  - elementId: c5-avatar
+    elementType: shape
+    bounds: [1028, 176, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#C084FC18"
+
+  - elementId: c5-init
+    elementType: text
+    bounds: [1024, 176, 48, 48]
+    content:
+      fontSize: 14
+      fontFamily: "SortsMillGoudy"
+      color: "#C084FC"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>AM</p>
+
+  - elementId: c5-name
+    elementType: text
+    bounds: [1028, 230, 176, 22]
+    content:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans"
+      color: "$background"
+      wrap: false
+      text: |
+        <p><strong>Anupam Mittal</strong></p>
+
+  - elementId: c5-co
+    elementType: text
+    bounds: [1028, 254, 176, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF40"
+      wrap: false
+      text: |
+        <p>Founder, Shaadi.com</p>
+
+  - elementId: c5-div
+    elementType: shape
+    bounds: [1028, 284, 176, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: c5-quote
+    elementType: text
+    bounds: [1028, 296, 176, 76]
+    content:
+      fontSize: 13
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.5
+      text: |
+        <p>"Execution has not been spot on. I want my money secured."</p>
+
+  - elementId: c5-analysis-label
+    elementType: text
+    bounds: [1028, 382, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>WHY IT MATTERS</p>
+
+  - elementId: c5-analysis
+    elementType: text
+    bounds: [1028, 404, 176, 120]
+    content:
+      fontSize: 13
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p>Most <strong style="color:#F3EDE5;">grounded critique</strong>. Only shark who ordered the product. Offer: ₹85L for 10% + 10% royalty.</p>
+
+  - elementId: c5-validity-label
+    elementType: text
+    bounds: [1028, 536, 176, 18]
+    content:
+      fontSize: 10
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>VALIDITY</p>
+
+  - elementId: c5-d1
+    elementType: shape
+    bounds: [1028, 562, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c5-d2
+    elementType: shape
+    bounds: [1044, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c5-d3
+    elementType: shape
+    bounds: [1060, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c5-d4
+    elementType: shape
+    bounds: [1076, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$red"
+
+  - elementId: c5-d5
+    elementType: shape
+    bounds: [1092, 556, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+
+  - elementId: c5-vnote
+    elementType: text
+    bounds: [1028, 580, 176, 50]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF50"
+      lineHeight: 1.4
+      text: |
+        <p>Most grounded — but terms unworkable (67% of margin)</p>

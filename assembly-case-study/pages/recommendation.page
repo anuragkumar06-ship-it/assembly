@@ -1,0 +1,311 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # Section number
+  - elementId: sec-num
+    elementType: text
+    bounds: [80, 30, 120, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      wrap: false
+      text: |
+        <p>08 / 10</p>
+
+  # Section eyebrow
+  - elementId: eyebrow
+    elementType: text
+    bounds: [80, 58, 300, 24]
+    content:
+      style: "$eyebrowLight"
+      wrap: false
+      text: |
+        <p>STRATEGIC RECOMMENDATION</p>
+
+  # Section heading
+  - elementId: heading
+    elementType: text
+    bounds: [80, 86, 600, 120]
+    content:
+      style: "$sectionHeadingLight"
+      text: |
+        <p>Three-Horizon<br><em style="color:#7FA3A0;">Growth Strategy</em></p>
+
+  # Three horizon cards
+  # Card 1 — Horizon 1
+  - elementId: h1-bg
+    elementType: shape
+    bounds: [80, 216, 370, 300]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: h1-label
+    elementType: text
+    bounds: [100, 232, 120, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      letterSpacing: 1.5
+      wrap: false
+      text: |
+        <p>HORIZON 1</p>
+
+  - elementId: h1-icon
+    elementType: icon
+    bounds: [100, 262, 28, 28]
+    iconName: "fas:crosshairs"
+    fill:
+      type: solid
+      color: "$secondaryLight"
+
+  - elementId: h1-title
+    elementType: text
+    bounds: [100, 300, 330, 56]
+    content:
+      fontSize: 22
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.3
+      text: |
+        <p>Own the Considered Minimalist</p>
+
+  - elementId: h1-time
+    elementType: text
+    bounds: [100, 362, 200, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>NOW · 0–12 MONTHS</p>
+
+  - elementId: h1-body
+    elementType: text
+    bounds: [100, 390, 330, 76]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p>Stop targeting all HENRY. Own the sub-segment: urban professionals who choose Notion over Excel, Uniqlo over Zara.</p>
+
+  - elementId: h1-metric
+    elementType: text
+    bounds: [100, 476, 330, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      wrap: false
+      text: |
+        <p>→ Key metric: Brand NPS & community size</p>
+
+  # Card 2 — Horizon 2
+  - elementId: h2-bg
+    elementType: shape
+    bounds: [466, 216, 370, 300]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: h2-label
+    elementType: text
+    bounds: [486, 232, 120, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      letterSpacing: 1.5
+      wrap: false
+      text: |
+        <p>HORIZON 2</p>
+
+  - elementId: h2-icon
+    elementType: icon
+    bounds: [486, 262, 28, 28]
+    iconName: "fas:plane"
+    fill:
+      type: solid
+      color: "$secondaryLight"
+
+  - elementId: h2-title
+    elementType: text
+    bounds: [486, 300, 330, 56]
+    content:
+      fontSize: 22
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.3
+      text: |
+        <p>The Business Traveller</p>
+
+  - elementId: h2-time
+    elementType: text
+    bounds: [486, 362, 200, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>12–24 MONTHS</p>
+
+  - elementId: h2-body
+    elementType: text
+    bounds: [486, 390, 330, 76]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p>Indian corporate travel is booming. Launch a dedicated business line at ₹6–9K with TSA-lock and laptop-first design.</p>
+
+  - elementId: h2-metric
+    elementType: text
+    bounds: [486, 476, 330, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      wrap: false
+      text: |
+        <p>→ Key metric: B2B & corporate bulk orders</p>
+
+  # Card 3 — Horizon 3
+  - elementId: h3-bg
+    elementType: shape
+    bounds: [852, 216, 370, 300]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF10"
+
+  - elementId: h3-label
+    elementType: text
+    bounds: [872, 232, 120, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF30"
+      letterSpacing: 1.5
+      wrap: false
+      text: |
+        <p>HORIZON 3</p>
+
+  - elementId: h3-icon
+    elementType: icon
+    bounds: [872, 262, 28, 28]
+    iconName: "fas:graduation-cap"
+    fill:
+      type: solid
+      color: "$secondaryLight"
+
+  - elementId: h3-title
+    elementType: text
+    bounds: [872, 300, 330, 56]
+    content:
+      fontSize: 22
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.3
+      text: |
+        <p>The Graduate Entry Point</p>
+
+  - elementId: h3-time
+    elementType: text
+    bounds: [872, 362, 200, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>24–36 MONTHS</p>
+
+  - elementId: h3-body
+    elementType: text
+    bounds: [872, 390, 330, 76]
+    content:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans"
+      color: "#FFFFFF70"
+      lineHeight: 1.5
+      text: |
+        <p>India produces 1.5 Cr+ graduates annually. "First Bag" campaign positions Assembly as the bag for when real life begins.</p>
+
+  - elementId: h3-metric
+    elementType: text
+    bounds: [872, 476, 330, 24]
+    content:
+      fontSize: 12
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      wrap: false
+      text: |
+        <p>→ Key metric: Repeat purchase rate</p>
+
+  # Positioning statement box
+  - elementId: ps-bg
+    elementType: shape
+    bounds: [80, 540, 1120, 120]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#6E8F8B10"
+    border:
+      style: solid
+      width: 1
+      color: "#6E8F8B30"
+
+  - elementId: ps-label
+    elementType: text
+    bounds: [108, 556, 300, 20]
+    content:
+      fontSize: 11
+      fontFamily: "QuattrocentoSans"
+      color: "$secondaryLight"
+      letterSpacing: 1.5
+      wrap: false
+      text: |
+        <p>PROPOSED POSITIONING STATEMENT</p>
+
+  - elementId: ps-text
+    elementType: text
+    bounds: [108, 582, 1064, 60]
+    content:
+      fontSize: 22
+      fontFamily: "SortsMillGoudy"
+      color: "$background"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>"Assembly is the bag built by people who love making things — for people who love owning things that last."</p>
